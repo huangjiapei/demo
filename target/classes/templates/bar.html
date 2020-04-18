@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>顶部栏</title>
+<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div th:fragment="topbar">
+	
+	<div id="home">
+	<div class="banner_w3lspvt">
+		<div class="nav_w3ls pt-4 pb-3 text-center">
+					<nav>
+						<label for="drop" class="toggle">Menu</label>
+						<input type="checkbox" id="drop" />
+						<ul class="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+		</div>
+	</div>
+</div>
+	</div>
+</body>
+</html>

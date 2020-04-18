@@ -1,0 +1,150 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.list-wrap label {
+  float:left;
+  color:#555;
+}
+.search-box {
+  float:left;
+  clear:left;
+  width:70%;
+  padding:0.4em;
+  font-size:1em;
+  color:#555;
+  border:1px solid #00BDE8;
+  border-radius:3px;
+}
+
+.list-count {
+  float:left;
+  text-align:center;
+  width:30%;
+  padding:0.5em;
+  color:#ddd;
+}
+
+li {
+  transition-property: margin, background-color, border-color;
+  transition-duration: .4s, .2s, .2s;
+  transition-timing-function: ease-in-out, ease, ease;
+}
+
+.empty-item {
+  transition-property: opacity;
+  transition-duration: 0s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
+.empty .empty-item {
+  transition-property: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
+  transition-timing-function: ease;
+}
+
+.hiding {
+  margin-left:-100%;
+  opacity:0.5;
+}
+
+.hidden {
+  display:none;
+}
+
+ul {
+  float:left;
+  width:100%;
+  margin:2em 0;
+  padding:0;
+  position:relative;
+}
+
+ul:before {
+  content:'美食美客';
+  position:absolute;
+  left:-2.8em;
+  font-size:2em;
+  text-align:right;
+  top:1.5em;
+  color:#ededed;
+  font-weight:bold;
+  font-family: 'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+  transform:rotate(-90deg);
+}
+
+li {
+  float:left;
+  clear:left;
+  width:100%;
+  margin:0.2em 0;
+  padding:0.5em 0.8em;
+  list-style:none;
+  background-color:#f2f2f2;
+  border-left:5px solid #003842;
+  cursor:pointer;
+  color:#333;
+  position:relative;
+  z-index:2;
+}
+
+li:hover {
+  background-color:#f9f9f9;
+  border-color:#00BDE8;
+}
+
+.empty-item {
+  background:#fff;
+  color:#ddd;
+  margin:0.2em 0;
+  padding:0.5em 0.8em;
+  font-style:italic;
+  border:none;
+  text-align:center;
+  visibility:hidden;
+  opacity:0;
+  float:left;
+  clear:left;
+  width:100%;
+}
+
+.empty .empty-item {
+  opacity:1;
+  visibility:visible;
+}
+/*
+The following are styles purely for the surroundings
+*/
+body {
+  background-color:#fff;
+  font-family:'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+  margin:0;
+  padding:0;
+  font-size:1em;
+}
+
+a {color:#00BDE8;}
+
+h1 {
+  font-size:2em;
+  margin:0;
+  padding-top:1.5em;
+  text-align:center;
+  font-family: 'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+}
+h3 {
+  margin:0 0 2em;
+  text-align:center;
+  font-weight:normal;
+  font-family: 'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+  font-style:italic;
+  color:#777;
+  font-size:1em;
+}
+
+.list-wrap {
+  float:left;
+  width:40%;
+  margin:2em 30%;
+  padding:2em 0;
+}
